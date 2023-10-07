@@ -1,0 +1,56 @@
+#container {
+    position: relative;
+    /*👉we have to give postion relative for responsiveness of the clock👈*/
+    margin: auto;
+    /*👉margin auto for the clock to stay in between of the webpage👈*/
+    height: 40vw;
+    width: 40vw;
+    background: url(time.png) no-repeat;
+    background-size: 100%;
+}
+
+#hour,
+#minute,
+#second,
+#dot {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hour {
+    /*👉All the width, height, top, left is given for the adjustment of hour, minute and seconds hands in the clock.👈*/
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    /*👉Opacity is used for making the color fade so we can see all the clock hands even if they are overlapping on each other.👈*/
+    opacity: 0.8;
+}
+
+#minute {
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+}
+
+#second {
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+}
+
+
+/* we made this id for making the center dot in the clock or we can take a png image of a clock with the center dot already situated inside it. */
+
+#dot {
+    width: 4%;
+    height: 4%;
+    top: 47%;
+    left: 48.58%;
+}
